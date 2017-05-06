@@ -1,0 +1,49 @@
+/**index.wxss**/
+.btn-area{
+  display: flex;
+}
+.slide-image{
+    width: 100%;
+    height: 200px;
+}
+.nav02{
+  flex: 1;
+ margin: 10px;
+ padding: 5px 10px;
+border-radius: 50%;
+ display: block;
+ color:aqua;
+ border-radius: 4px;
+ text-align: center;
+}
+.nav03{
+  flex: 1;
+  padding: 10px 0px;
+  margin: 0px 10px;
+height: 80px;
+line-height: 80px;
+border-radius: 10px;
+ display: block;
+ color:aqua;
+ border-radius: 4px;
+ text-align: center;
+}
+.nav02 image{
+  border-radius: 50%;
+  width: 120px;
+  height: 110px;
+}
+.nav01{
+  flex: 1;
+ margin: 10px;
+ padding: 5px 10px;
+ display: block;
+ color:aqua;
+ border-radius: 4px;
+ text-align: center;
+}
+.nav01 image{
+  border-radius: 50%;
+  width: 120px;
+  height: 110px;
+}

@@ -1,0 +1,99 @@
+/* pages/movieDetaik/movieDetaik.wxss */
+.bt{
+    display: flex;
+    padding-top: 6px;
+    text-align: center;
+    width:100%;
+}
+.btn{
+    position: fixed;
+    right: 6px;
+    top:300px;
+}
+.danmu{
+    flex: 1;
+    height: 24px;
+    line-height: 24px; 
+}
+.inp{
+    flex: 3;
+    border: 1px solid #cccccc;
+    height: 22px;
+    line-height: 22px;
+}
+.btn01{
+    flex: 1;
+    height: 24px;
+    line-height: 24px;
+    margin-left: 4px;
+}
+#myVideo{
+    width:100%;
+}
+.nav01{
+    font-size: 12px;
+    padding: 4px;
+    border: 1rpx solid #cccccc;
+    border-radius: 6px;
+  
+}
+.nav02{
+    font-size: 12px;
+    padding: 4px;
+    border: 1rpx solid #cccccc;
+    border-radius: 6px;
+  
+}
+.nav03{
+    font-size: 12px;
+    padding: 4px;
+    border: 1rpx solid #cccccc;
+    border-radius: 6px;
+
+}
+
+.dee{
+    display: flex;
+    padding-top: 8px;
+    padding-left: 10px;
+    width: 100%;
+}
+.dee image{
+    flex: 1;
+    width: 100px;
+    height: 130px;
+}
+
+.you{
+    flex: 2;
+    margin-left: 6px;
+}
+.name{
+    font-size: 14px;
+    color: #666666;
+    font-weight: 900;
+
+}
+.t{
+    font-size: 12px;
+    color: #666666;
+    padding-top: 5px;
+}
+.star{
+     font-size: 12px;
+    color: #666666;
+    padding-top: 5px;
+    margin-right: 40px;
+    overflow:hidden;
+    width: 180px;
+white-space:nowrap;
+text-overflow:ellipsis;
+
+}
+.pin{
+    font-size: 12px;
+    padding: 10px;
+    line-height: 18px;
+    color: #cccccc;
+    height: 90px;
+}

@@ -1,0 +1,63 @@
+<!--pages/mine/mine.wxml-->
+<scroll-view scroll-x="{{false}}" scroll-y="{{false}}" style="background:url('http://www.liuhedong.online/img/bgg01.jpg'); background-size:100% 100%; width:100%;height:{{scrollH}}px;">
+   <view class="header" style="background:url('https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3587565883,3118068607&fm=23&gp=0.jpg') no-repeat; background-size:100% 100%; width:100%;height:180px;">
+         <image src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2005504863,317526961&fm=23&gp=0.jpg" class="img"></image>
+   </view>
+
+   <scroll-view scroll-y="true" class="footer" style="height:{{scrollH02}}px;">
+      <view class="like">
+        <image src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1741697145,2881429077&fm=23&gp=0.jpg" class="ima01"></image>  
+        <view class="titl">最喜欢的电影</view>
+        <image src="/image/left.png" class="ima02" bindtap="Swith"></image>  
+        </view>
+        <scroll-view scroll-x="true" class="detail" style="overflow:hidden" animation="{{musicAnimation}}" >          <view class="movieList" wx:for="{{movielist}}" wx:for-item="mo" wx:key="{{index}}">
+            <view class="classname" style="height:100%; width:{{108*10}}px;" >
+            <view class="movie-dan"  >
+            <image src="{{mo.img}}"  bindtap="gotoDetail" data-id="{{mo.id}}" class="li"></image>
+             <view class="ming">{{mo.nm}}</view>
+              </view>
+             </view>
+              </view>
+        </scroll-view>
+
+
+
+
+
+
+
+        <view class="like">
+        <image src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2938630390,2260984733&fm=23&gp=0.jpg" class="ima01"></image>  
+        <view class="titl">最喜欢的音乐</view>
+        <image src="/image/left.png" class="ima02" bindtap="liu"></image>  
+        </view>
+        <scroll-view scroll-x="true" class="detail" style="overflow:hidden;" animation="{{mAnimation}}" >       
+            <view class="classname" style="height:100%; width:{{108*10}}px;" >
+            <view class="movieList" wx:for="{{musicList}}"  wx:for-item="music" wx:for-index="idx" wx:key="{{idx}}">
+            <view class="movie-dan"  >
+            <image src="{{music.pic_small}}" class="li"></image>
+             <view class="ming">{{music.album_title}}</view>
+              </view>
+              </view>
+              </view>
+        </scroll-view>
+
+
+
+       <view class="like">
+        <image src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=837930272,4137055874&fm=23&gp=0.jpg" class="ima01"></image>  
+        <view class="titl">浏览足迹</view>
+        <image src="/image/left.png" class="ima02" bindtap="he"></image>  
+        </view>
+        <scroll-view scroll-x="true" class="detail" style="overflow:hidden;" animation="{{mAn}}" >
+            <view class="classname" style="height:100%; width:{{108*10}}px;" >
+            <view class="movie-dan"  >
+            <image src="/image/01.jpg" data-id="{{idx}}" bindtap="playmovie" class="li"></image>
+             <view class="ming">刘施蒂利克</view>
+              </view>
+          
+              </view>
+        </scroll-view>
+   
+   </scroll-view>
+</scroll-view>

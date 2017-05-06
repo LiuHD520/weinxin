@@ -1,0 +1,38 @@
+<!--pages/movie/movie.wxml-->
+
+<scroll-view scroll-x="{{false}}" scroll-y="{{false}}"  style="background:url('https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=271817289,26635816&fm=23&gp=0.jpg'); background-size:100% 100%;  width:100%;height:{{scrollHall}}px;">
+
+   <view class="header">电影</view>
+
+   <swiper indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true" style="width:{{scrollW}}px;">
+        <block wx:for="{{imgUrls}}" style="width:{{scrollW}}px;">
+            <swiper-item>
+            <image src="{{item}}" class="slide-image" width="100%" height="150"/>
+            </swiper-item>
+        </block>
+   </swiper>
+
+     <scroll-view class="scroll-view_H" scroll-y="true" style="height: {{scrollH}}px;position: fixed;bottom: 0px;"  >
+     <view style="color:green; margin-left:40%; margin-top:10px; font-weight:700;">最新电影</view>
+  <view class="movieList" wx:for="{{movielist}}" wx:for-item="mo" wx:key="{{index}}">
+          <view class="movie-dan" >
+             <botton class="moviePoster">
+            <image src="{{mo.img}}"  bindtap="gotoDetail" data-id="{{mo.id}}"></image>
+            </botton>
+            <view class="right">
+            <view class="movieName">☺ {{mo.nm}}</view>
+            <view class="movieAuthor">类型：{{mo.cat}}</view>
+            <view class="des">演员：{{mo.star}}</view>
+            <view class="des02">评分：{{mo.sc}}</view>
+            </view>
+            <view class="img">
+            <image src="/image/bo.png"  bindtap="gotoDetail" data-id="{{mo.id}}"></image>
+            </view>
+        </view>
+       
+ </view>
+ </scroll-view>
+
+
+</scroll-view>

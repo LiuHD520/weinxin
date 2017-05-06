@@ -1,0 +1,56 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/movie/movie",
+    "pages/movieDetaik/movieDetaik",
+     
+     "pages/mine/mine",
+    
+   
+    
+    
+     "pages/music/music"
+   
+   
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#f4f4f4",
+    "navigationBarTitleText": "小程序",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#f4f4f4",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "iconPath": "image/home01.png",
+      "selectedIconPath": "image/home02.png",
+      "text": "首页"
+    }, {
+      "pagePath": "pages/music/music",
+      "iconPath": "image/music01.png",
+      "selectedIconPath": "image/music02.png",
+      "text": "音乐"
+    }, {
+      "pagePath": "pages/movie/movie",
+      "iconPath": "image/mov01.png",
+      "selectedIconPath": "image/mov02.png",
+      "text": "电影"
+    }, {
+      "pagePath": "pages/mine/mine",
+      "iconPath": "image/m01.png",
+      "selectedIconPath": "image/m02.png",
+      "text": "我的"
+    }],
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": false
+  }
+}

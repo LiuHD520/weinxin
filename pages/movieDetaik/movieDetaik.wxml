@@ -1,0 +1,26 @@
+<view class="section tc">
+ <video id="myVideo" src="{{moviedetail.vd}}" danmu-list="{{danmuList}}" enable-danmu danmu-btn controls></video>
+  <view class="bt">
+      <view class="danmu">弹幕：</view>
+     <input bindblur="bindInputBlur" class="inp"/>
+    <button bindtap="bindSendDanmu" class="btn01">发送</button>
+  </view>
+</view>
+<view class="dee">
+     <image src="{{moviedetail.img}}"></image>
+     <view class="you">
+         <view class="name">{{moviedetail.nm}}</view>
+         <view class="t">上映时间:{{moviedetail.rt}}</view>
+         
+         <view class="star">演员：{{moviedetail.star}}</view>
+     </view>
+     
+</view>
+<scroll-view class="pin">
+        简介：  {{moviedetail.dra}}
+    </scroll-view>
+  <view class="btn">
+          <navigator bindtap="bindViewTap01" class="nav01">音乐</navigator>
+          <navigator bindtap="bindViewTap02" class="nav02">电影</navigator>
+          <navigator bindtap="bindViewTap03" class="nav03">我的</navigator>
+ </view>

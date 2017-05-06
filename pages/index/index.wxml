@@ -1,0 +1,28 @@
+<!--index.wxml-->
+
+    <scroll-view scroll-x="{{false}}" scroll-y="{{false}}" style="background:url('http://www.liuhedong.online/img/bgg01.jpg') no-repeat; background-size:100% 100%;  width:100%;; height:{{scro}}px;">
+    <swiper indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true" style="width:{{scrollW}}px; height:200px;">
+        <block wx:for="{{imgUrls}}" style="width:{{scrollW}}px;">
+            <swiper-item>
+            <image src="{{item}}" class="slide-image" width="100%" height="200"/>
+            </swiper-item>
+        </block>
+   </swiper>
+
+       <view class="btn" style="height:{{sc}}px;">
+       <view class="btn-area">
+          <navigator bindtap="bindViewTap01" class="nav01">
+                <image src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=4246964255,4028431365&fm=23&gp=0.jpg"></image>
+                <view class="titl">音乐</view>
+          </navigator>
+          <navigator bindtap="bindViewTap02" class="nav02">
+          <image src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=562832098,3169590504&fm=23&gp=0.jpg"></image>
+          <view class="titl">电影</view>
+          </navigator>
+        
+        </view>
+          <navigator bindtap="bindViewTap03" class="nav03" style="background:url('https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=471985361,2299527702&fm=23&gp=0.jpg') no-repeat; background-size:100% 100%;">我的</navigator>
+          </view>
+    </scroll-view>
+

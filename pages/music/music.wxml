@@ -1,0 +1,43 @@
+
+<scroll-view scroll-x="{{false}}" style="text-align: center;background:url('http://www.liuhedong.online/img/bgg03.png') no-repeat; background-size:100% 100%; width:100%;height:{{scrollHall}}px;">
+<audio class="audio-header" poster="{{music.posit}}" name="{{music.name}}" author="{{music.author}}" src="{{music.src}}" id="myAudio" controls bindended="endHandle" bindtimeupdate="time" ></audio>
+
+ 
+ <swiper indicator-dots="{{true}}"  circular="true" style="width:100%; height: {{scrollH}}px;">
+            <swiper-item>
+            <scroll-view class="scroll-view_H" scroll-y="true" style="height: {{scrollH}}px"  >
+             <view wx:for="{{musicList}}" wx:for-item="music" wx:for-index="idx" wx:key="{{idx}}" class="music"  >
+           <view class="music-dan"  >
+             <botton class="musicPoster">
+            <image src="{{music.posit}}" data-id="{{idx}}" bindtap="playMusic"></image>
+            </botton>
+            <view class="right" style="box-sizing: border-box">
+            <view class="musicName">{{music.name}}</view>
+            <view class="musicAuthor">{{music.author}}</view>
+            <view class="des">{{music.des}}</view>
+            </view>
+        </view>
+    </view>
+ </scroll-view>
+            </swiper-item>
+            <swiper-item>
+                 <view class="lrc" style="width:100%; height: {{scrollH}}px;background:url('{{music.posit}}'); background-size:100% 100%; color:yellow;  text-align: center;  line-height: {{scrollH}}px ">
+                  {{musicText}}
+                 </view>
+            </swiper-item>
+       
+   </swiper>
+ <view class="footer"  style="background:url('http://www.liuhedong.online/img/bng.png') no-repeat; background-size:100% 100%; ">
+      <view class="fo">
+      <progress percent="{{percent}}" style="margin-left:10px;margin-right:10px;margin:10px 0px;" />
+        <image src="/image/play.png" bindtap="audioPlay" style="clean:both;width: 40px;height: 40px;border-radius: 50%; display: inline-block; margin:0 5px; border: 1px solid #cccccc;"></image>
+        <image src="/image/pause.png"   bindtap="audioPause"style="clean:both;width: 40px;height: 40px;border-radius: 50%; display: inline-block; margin:0 5px; border: 1px solid #cccccc;"></image>
+        <image src="/image/kuai.png" bindtap="audio14" style="clean:both;width: 40px;height: 40px;border-radius: 50%; display: inline-block;margin:0 5px;"></image>
+        <image src="/image/hui.png" bindtap="audioStart" style="clean:both;width: 20px;height: 20px;border-radius: 50%; display: inline-block;padding:10px;margin:0 5px; border: 1px solid #cccccc;"></image>
+        
+        
+        
+        </view>
+ </view>
+        
+</scroll-view>
